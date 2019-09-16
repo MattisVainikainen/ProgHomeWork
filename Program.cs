@@ -114,6 +114,7 @@ namespace ProgHomeWork
                     Ovning15.Print();
                     break;
                 #endregion
+                #region Övning 16-20
                 case 16:
                     Övningar.IfSatser.Ovning16 Ovning16 = new Övningar.IfSatser.Ovning16();
                     Ovning16.Print();
@@ -138,11 +139,12 @@ namespace ProgHomeWork
                     Övningar.IfSatser.Ovning20 Ovning20 = new Övningar.IfSatser.Ovning20();
                     Ovning20.Print();
                     break;
-
+                #endregion
 
                 default:
                     Console.WriteLine("Välj ibland menyn: ");
                     break;
+                    
             }
             
               
