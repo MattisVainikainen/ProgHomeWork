@@ -11,18 +11,18 @@ namespace ProgHomeWork.Övningar.IfSatser
         double heltid = 40;
         public double RaknaUtLon(double timLon, double antalTimmar)
         {
-            double heltidsLön = heltid * timLon;
+            double heltidsLön = antalTimmar * timLon;
 
             if(antalTimmar >40)
             {
                 double antalTimmarÖverTid = antalTimmar - heltid;
-                double totalÖvertidsLön = (antalTimmarÖverTid * timLon) * 1.5;
+                double totalÖvertidsLön = (antalTimmarÖverTid * timLon) * 0.5;
                 double totalt = heltidsLön + totalÖvertidsLön;
                 Console.WriteLine("Lön med övertid: " + totalt);
                 Console.ReadLine();
             }
 
-            return heltid * timLon;
+            return antalTimmar * timLon;
             
            
         }
