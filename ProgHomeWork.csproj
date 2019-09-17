@@ -65,6 +65,10 @@
     <Compile Include="Övningar\IfSatser\Ovning7.cs" />
     <Compile Include="Övningar\IfSatser\Ovning8.cs" />
     <Compile Include="Övningar\IfSatser\Ovning9.cs" />
+    <Compile Include="Övningar\RandomOvningar\Aldersgrans.cs" />
+    <Compile Include="Övningar\RandomOvningar\Klubben.cs" />
+    <Compile Include="Övningar\RandomOvningar\Mobile.cs" />
+    <Compile Include="Övningar\RandomOvningar\RandomNamn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
