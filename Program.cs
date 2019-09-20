@@ -45,6 +45,12 @@ namespace ProgHomeWork
                     Console.WriteLine("20) Övning 20 ");
                     Console.WriteLine("21) Övning Åldersgräns");
                     Console.WriteLine("22) ProjektLottning");
+                    Console.WriteLine("23) Login");
+                    Console.WriteLine("ForLOOPS ");
+                    Console.WriteLine("24) Övning 1");
+                    Console.WriteLine("25) Övning 2");
+                    Console.WriteLine("26) Övning 3");
+                    Console.WriteLine("27) Övning 4");
                     Console.WriteLine();
                     Console.Write("Välj Övning: ");
                     int menuVal = Convert.ToInt32(Console.ReadLine());
@@ -131,7 +137,7 @@ namespace ProgHomeWork
                             Ovning15.Print();
                             break;
                         #endregion
-                        #region Övning 16-20
+                        #region Övning 16-2
                         case 16:
                             Övningar.IfSatser.Ovning16 Ovning16 = new Övningar.IfSatser.Ovning16();
                             Ovning16.Print();
@@ -157,6 +163,7 @@ namespace ProgHomeWork
                             Ovning20.Print();
                             break;
                         #endregion
+                        #region Övning 21-23
 
                         case 21:
                             Övningar.RandomOvningar.Aldersgrans aldersgrans = new Övningar.RandomOvningar.Aldersgrans();
@@ -169,10 +176,36 @@ namespace ProgHomeWork
                             rNamn.RandomNames();
                             break;
 
+                        case 23:
+                            Console.Clear();
+                            Övningar.RandomOvningar.Login login = new Övningar.RandomOvningar.Login();
+                            login.Print();
+                            break;
+                        #endregion
+                        case 24:
+                            Övningar.loopsFOR.Ovning1 ForOvning1 = new Övningar.loopsFOR.Ovning1();
+                            ForOvning1.Print();
+                            break;
+
+                        case 25:
+                            Övningar.loopsFOR.Ovning2 ForOvning2 = new Övningar.loopsFOR.Ovning2();
+                            ForOvning2.Print();
+                            break;
+
+                        case 26:
+                            Övningar.loopsFOR.Ovning3 ForOvning3 = new Övningar.loopsFOR.Ovning3();
+                            ForOvning3.Print();
+                            break;
+
+                        case 27:
+                            Övningar.loopsFOR.Ovning4 ForOvning4 = new Övningar.loopsFOR.Ovning4();
+                            ForOvning4.Print();
+                            break;
+
                         default:
                             Console.WriteLine("Välj ibland menyn: ");
                             break;
-
+                        
                     }
                 }
                 catch 

@@ -8,6 +8,7 @@ namespace ProgHomeWork.Övningar.IfSatser
 {
     class Ovning2
     {
+     
         public void IsVa1Double(double t1, double t2)
         {
             if(t1*2 > t2)
