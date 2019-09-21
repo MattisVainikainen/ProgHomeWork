@@ -10,13 +10,16 @@ namespace ProgHomeWork.Övningar.loopsFOR
     {
         public void Print()
         {
-            Console.WriteLine("Ange tecken: ");
-            int tecken = int.Parse(Console.ReadLine());
+            int Resultat;
 
-            for (int i = 1; i < 9; i++)
+            for (int i = 1; i <= 9; i++)
             {
-                
+                Resultat = i * i;
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
+                Console.WriteLine($"Kvadraten för {i} är: {Resultat}");
             }
+            Console.ReadLine();
         }
+       
     }
 }
