@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{705777BF-4D21-426A-89FB-BC020D8979E4}</ProjectGuid>
+    <ProjectGuid>{7D195F5A-FD8A-4841-BCD4-5820308C35ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ForLoops</RootNamespace>
-    <AssemblyName>ForLoops</AssemblyName>
+    <RootNamespace>Forloopar</RootNamespace>
+    <AssemblyName>Forloopar</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForLoopss.cs" />
+    <Compile Include="forloops\Ovning34.cs" />
+    <Compile Include="forloops\Ovning37.cs" />
+    <Compile Include="forloops\Ovning39.cs" />
+    <Compile Include="forloops\Ovning40.cs" />
+    <Compile Include="forloops\Ovning41.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

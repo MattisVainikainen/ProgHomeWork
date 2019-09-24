@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForLoops
+namespace OvningsTenta
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
-
-            ForLoopss forloop = new ForLoopss();
-            forloop.Print();
         }
     }
 }
