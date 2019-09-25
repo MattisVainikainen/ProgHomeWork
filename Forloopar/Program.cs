@@ -37,8 +37,23 @@ namespace Forloopar
             //forloops.Ovning44 Ovn44 = new forloops.Ovning44();
             //Ovn44.Print();
 
-            forloops.Ovning46 Ovn46 = new forloops.Ovning46();
-            Ovn46.Print();
+            //forloops.Ovning46 Ovn46 = new forloops.Ovning46();
+            //Ovn46.Print();
+
+            //forloops.Ovning47 Ovn47 = new forloops.Ovning47();
+            //Ovn47.Print();
+
+            //forloops.Ovning48 Ovn48 = new forloops.Ovning48();
+            //Ovn48.Print();
+
+            //forloops.Ovning49 Ovn49 = new forloops.Ovning49();
+            //Ovn49.Print();
+
+            //forloops.Ovning51 Ovn51 = new forloops.Ovning51();
+            //Ovn51.Print();
+
+            forloops.Ovning52 Ovn52 = new forloops.Ovning52();
+            Ovn52.Print();
         }
     }
 }
