@@ -52,8 +52,11 @@ namespace Forloopar
             //forloops.Ovning51 Ovn51 = new forloops.Ovning51();
             //Ovn51.Print();
 
-            forloops.Ovning52 Ovn52 = new forloops.Ovning52();
-            Ovn52.Print();
+            //forloops.Ovning52 Ovn52 = new forloops.Ovning52();
+            //Ovn52.Print();
+
+            forloops.Ovning53 Ovn53 = new forloops.Ovning53();
+            Ovn53.Print();
         }
     }
 }

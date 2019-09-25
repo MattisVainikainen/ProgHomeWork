@@ -57,6 +57,7 @@
     <Compile Include="forloops\Ovning49.cs" />
     <Compile Include="forloops\Ovning51.cs" />
     <Compile Include="forloops\Ovning52.cs" />
+    <Compile Include="forloops\Ovning53.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

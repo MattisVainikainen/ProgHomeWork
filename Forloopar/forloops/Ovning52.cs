@@ -10,27 +10,30 @@ namespace Forloopar.forloops
     {
         public void Print()
         {
-            int positiveNumber = 0;
             int negativeNumber = 0;
-            
+            int positiveNumber = 0;
+            int sum = 0;
+
             for (int i = 1; i <= 10; i++)
             {
+                
                 Console.Write($"Ange tal {i}: ");
-                int userInput = int.Parse(Console.ReadLine());
+                int tal = int.Parse(Console.ReadLine());
 
-                if(userInput < 0)
+                if(tal > 0)
+                {
+                    sum += tal;
+                    positiveNumber++;
+                }
+                else
                 {
                     negativeNumber++;
                 }
-
-                if(userInput > 0)
-                {
-                    positiveNumber++;
-                }
-
-                
+ 
             }
-            Console.Write($"Du angav ett positivt nummer {positiveNumber} gånger.");
+            Console.WriteLine($"Antal negativa nummer: {negativeNumber} ");
+            Console.WriteLine($"Antal positiva nummer: {positiveNumber} ");           
+            Console.WriteLine($"Summan av alla tal blir: {sum} ");
             Console.ReadLine();
         }
     }

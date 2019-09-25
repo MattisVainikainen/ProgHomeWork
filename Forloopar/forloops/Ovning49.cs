@@ -14,11 +14,11 @@ namespace Forloopar.forloops
             double x = int.Parse(Console.ReadLine());
             Console.Write("Ange Värdet n: ");
             double n = int.Parse(Console.ReadLine());
-            double sum = 0;
+            double sum = 1;
 
-            for (int i = 0; i < n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                sum = x * x;
+                sum  = sum * x;
                
             }
             Console.WriteLine($"Produkten av {x} ^ {n} = {sum}");
