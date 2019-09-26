@@ -8,5 +8,9 @@ namespace Forloopar.forloops
 {
     class Ovning54
     {
+        public void Print()
+        {
+ 
+        }
     }
 }
