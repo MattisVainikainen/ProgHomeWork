@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProgHomeWork.Övningar.IfSatser
 {
-    class Ovning1
+    public class Ovning1
     {
+      
         void IsValBigger(double t1, double t2)
         {
             
@@ -25,7 +26,8 @@ namespace ProgHomeWork.Övningar.IfSatser
             {
                 Console.WriteLine("Talen du skrev är lika stora ");
             }
-            Console.ReadLine();
+            Console.WriteLine("Klicka på enter för att komma tillbaks till meny");
+           
         }
 
         public void Print()
@@ -35,9 +37,16 @@ namespace ProgHomeWork.Övningar.IfSatser
             Console.Write("Skriv in tal 2: ");
             double tal2 = Convert.ToDouble(Console.ReadLine());
                
-
             IsValBigger(tal1, tal2);
-                        
+            
         }
+
+        public static void RunOvning1()
+        {
+            Ovning1 Ovning1 = new Ovning1();
+            Ovning1.Print();
+
+        }
+        
     }
 }

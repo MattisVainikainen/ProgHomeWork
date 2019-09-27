@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{730E7432-0B1A-418E-AD38-F8DAE08D7032}</ProjectGuid>
+    <ProjectGuid>{29F90C08-194F-4FBC-97FB-66EEC132F2A9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProgHomeWork</RootNamespace>
-    <AssemblyName>ProgHomeWork</AssemblyName>
+    <RootNamespace>SwitchOvning</RootNamespace>
+    <AssemblyName>SwitchOvning</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,42 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Övningar\FirstMenu.cs" />
-    <Compile Include="Övningar\IfSatser\IfSatsMenu.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning1.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning10.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning11.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning12.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning13.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning14.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning15.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning16.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning17.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning18.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning19.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning2.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning20.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning3.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning4.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning5.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning6.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning7.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning8.cs" />
-    <Compile Include="Övningar\IfSatser\Ovning9.cs" />
-    <Compile Include="Övningar\RandomOvningar\Aldersgrans.cs" />
-    <Compile Include="Övningar\RandomOvningar\Klubben.cs" />
-    <Compile Include="Övningar\RandomOvningar\Login.cs" />
-    <Compile Include="Övningar\RandomOvningar\Mobile.cs" />
-    <Compile Include="Övningar\RandomOvningar\RandomNamn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Övningar\SequenceProgrammering\" />
-    <Folder Include="Övningar\SwitchSats\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProgHomeWork.Övningar.IfSatser
 {
-    class IfSatsMenu
+    public class IfSatsMenu
     {
+        
         public void IfSats()
         {
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("|                                                          |");
-            Console.WriteLine("|                                                          |");
-            Console.WriteLine("|                                                          |");
             Console.WriteLine("|                            MENY                          |");
-            Console.WriteLine("|                                                          |");
-            Console.WriteLine("|                                                          |");
-            Console.WriteLine("|                                                          |");
             Console.WriteLine("------------------------------------------------------------");
             Console.WriteLine();
             Console.WriteLine("1) Övning 1");
