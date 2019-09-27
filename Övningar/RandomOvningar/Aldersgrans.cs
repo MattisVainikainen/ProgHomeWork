@@ -8,7 +8,11 @@ namespace ProgHomeWork.Övningar.RandomOvningar
 {
     class Aldersgrans
     {
-
+        public static void RunAldersGrans()
+        {
+            Aldersgrans alder = new Aldersgrans();
+            alder.Print();
+        }
         public void HarDuAldernInne(int alder, string ID)
         {
             if(alder != 16 || ID == "VIP" || ID == "Mattis")

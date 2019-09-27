@@ -9,7 +9,11 @@ namespace ProgHomeWork.Övningar.RandomOvningar
 {
     class Klubben
     {
-        
+        public static void RunKlubben()
+        {
+            Klubben klubb = new Klubben();
+            klubb.Print();
+        }
         public void Print()
         {
             int milliseconds = 2000;
