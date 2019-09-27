@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Övningar\Arrays\Arrayovning.cs" />
+    <Compile Include="Övningar\Collections\CollectionOvning.cs" />
     <Compile Include="Övningar\FirstMenu.cs" />
     <Compile Include="Övningar\IfSatser\IfSatsMenu.cs" />
     <Compile Include="Övningar\IfSatser\Ovning1.cs" />

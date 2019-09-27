@@ -25,7 +25,7 @@ namespace ProgHomeWork
                 Console.WriteLine("1: If satser");
                 Console.WriteLine("2: for loop");
                 Console.WriteLine("3: while loopar");
-                Console.WriteLine("4: Random Övningar");
+                Console.WriteLine("4: Collections");
                 Console.WriteLine("5: Arrays");
                 Console.WriteLine("6: Avsluta");
                 Console.WriteLine("--------------------");
@@ -52,7 +52,7 @@ namespace ProgHomeWork
                         break;
 
                     case "4":
-                        Console.WriteLine("Du valde Random Övningar");
+                        Övningar.Collections.CollectionOvning.RunCollection();
                         break;
 
                     case "5":
