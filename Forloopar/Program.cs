@@ -55,8 +55,8 @@ namespace Forloopar
             //forloops.Ovning52 Ovn52 = new forloops.Ovning52();
             //Ovn52.Print();
 
-            //forloops.Ovning53 Ovn53 = new forloops.Ovning53();
-            //Ovn53.Print();
+            forloops.Ovning53 Ovn53 = new forloops.Ovning53();
+            Ovn53.Print();
 
             //forloops.Ovning54 Ovn54 = new forloops.Ovning54();
             //Ovn54.Print();
@@ -64,8 +64,8 @@ namespace Forloopar
             //forloops.Ovning55 Ovn55 = new forloops.Ovning55();
             //Ovn55.Print();
 
-            forloops.Ovning56 Ovn56 = new forloops.Ovning56();
-            Ovn56.Print();
+           // forloops.Ovning56 Ovn56 = new forloops.Ovning56();
+            //Ovn56.Print();
         }
     }
 }

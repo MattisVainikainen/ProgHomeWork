@@ -56,7 +56,7 @@ namespace ProgHomeWork
                         break;
 
                     case "5":
-                        Övningar.Arrays.Arrayovning.RunArrayOvning();
+                        Övningar.Arrays.arrayMenu.Print();
                         break;
 
                     case "6":

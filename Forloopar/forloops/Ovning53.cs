@@ -25,11 +25,11 @@ namespace Forloopar.forloops
                     korrektaTal++;
                     
                 }
-             /*   else
+                else
                 {
                     i--;
                     Console.WriteLine($"Du angav felaktigt tal. ");
-                }*/
+                }
                 
             }
 
