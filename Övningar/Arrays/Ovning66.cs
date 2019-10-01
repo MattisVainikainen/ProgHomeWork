@@ -12,21 +12,20 @@ namespace ProgHomeWork.Övningar.Arrays
         {
 
             Console.Write("Ange persNumret (YYMMDD-NNNN): ");
-            string[] persNummer = new string[11];
-            foreach (var item in persNummer)
-            {
-                if(persNummer[7].Contains("-"))
+            // string personNummer = "780126-4990";
+            string userInput = Console.ReadLine(); 
+            char[] persNummer = userInput.ToCharArray();
+            string check = persNummer[6].ToString();
+         
+                if(check != "-")
                 {
-                    Console.WriteLine("Right format");
+                    Console.WriteLine("Error. Du måste ange rätt format. YYMMDD-NNNN");
                 }
-                else
+                
+                if(check == "-")
                 {
-                    Console.WriteLine("Wrong format");
+                    Console.WriteLine("Rätt format.. Tack!");
                 }
-            }
-
-            
-    
 
             Console.ReadLine();
         }
