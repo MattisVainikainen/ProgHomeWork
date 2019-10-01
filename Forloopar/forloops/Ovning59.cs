@@ -36,7 +36,7 @@ namespace Forloopar.forloops
                 }
             }
 
-            Console.WriteLine($"Största talet är {störstaTalet} och det minsta numret är {minstaTalet}");
+            Console.WriteLine($"Largets number is: {störstaTalet} and the smallest number is: {minstaTalet}");
             Console.ReadLine();
 
 
