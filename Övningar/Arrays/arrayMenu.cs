@@ -23,6 +23,7 @@ namespace ProgHomeWork.Övningar.Arrays
             Console.WriteLine("8: Övning 72");
             Console.WriteLine("9: Övning 73");
             Console.WriteLine("10: Övning 74");
+            Console.WriteLine("11: Övning 75");
             Console.WriteLine();
             Console.Write("Ange val: ");
             int menu = int.Parse(Console.ReadLine());
@@ -67,6 +68,10 @@ namespace ProgHomeWork.Övningar.Arrays
 
                 case 10:
                     Ovning74.RunOvning74();
+                    break;
+
+                case 11:
+                    Ovning75.RunOvning75();
                     break;
             }
 
