@@ -54,6 +54,7 @@
     <Compile Include="Övningar\Arrays\Ovning69.cs" />
     <Compile Include="Övningar\Arrays\Ovning70.cs" />
     <Compile Include="Övningar\Arrays\Ovning72.cs" />
+    <Compile Include="Övningar\Arrays\Ovning73.cs" />
     <Compile Include="Övningar\Collections\CollectionOvning.cs" />
     <Compile Include="Övningar\FirstMenu.cs" />
     <Compile Include="Övningar\IfSatser\IfSatsMenu.cs" />

@@ -12,7 +12,7 @@ namespace ProgHomeWork.Övningar.Arrays
         {
             
             int[] OlikaTal = { -10, 10, 40, -4, 34 , -10, -100, 566};
-            int negativaTal = 0;
+
 
             foreach (var number in OlikaTal)
             {
