@@ -27,7 +27,8 @@ namespace ProgHomeWork
                 Console.WriteLine("3: while loopar");
                 Console.WriteLine("4: Collections");
                 Console.WriteLine("5: Arrays");
-                Console.WriteLine("6: Avsluta");
+                Console.WriteLine("6: Random Övningar");
+                Console.WriteLine("7: Avsluta");
                 Console.WriteLine("--------------------");
                 Console.WriteLine();
                 Console.Write("Välj ett val: ");
@@ -60,6 +61,10 @@ namespace ProgHomeWork
                         break;
 
                     case "6":
+                        
+                        break;
+
+                    case "7":
                         Console.WriteLine("Du valde att avsluta programmet. klicka vidare...");
                         break;
 

@@ -48,6 +48,7 @@
     <Compile Include="Övningar\Arrays\arrayMenu.cs" />
     <Compile Include="Övningar\Arrays\Arrayovning.cs" />
     <Compile Include="Övningar\Arrays\Arrays1.cs" />
+    <Compile Include="Övningar\Arrays\CopyArray.cs" />
     <Compile Include="Övningar\Arrays\Ovning66.cs" />
     <Compile Include="Övningar\Arrays\Ovning67.cs" />
     <Compile Include="Övningar\Arrays\Ovning68.cs" />
