@@ -11,7 +11,7 @@ namespace ProgHomeWork.Övningar.Arrays
         public void Print()
         {
             double[] Olikatal = new double[2];
-
+            double sum;
             for (int i = 0; i < Olikatal.Length; i++)
             {
                 Console.Write($"Ange tal {1}: ");
@@ -22,7 +22,13 @@ namespace ProgHomeWork.Övningar.Arrays
             {
                 Console.WriteLine("Error. Nämnaren kan inte vara en 0a.");
             }
+            else
+            {
+               sum = Olikatal[0] / Olikatal[1];
+               Console.WriteLine($"Täljare / Nämnare = {sum}");
+            }
 
+            
             Console.ReadLine();
         }
 
