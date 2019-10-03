@@ -25,6 +25,7 @@ namespace ProgHomeWork.Övningar.Arrays
             Console.WriteLine("10: Övning 74");
             Console.WriteLine("11: Övning 75");
             Console.WriteLine("12: Övning Copy Array");
+            Console.WriteLine("13: Övning 76");
             Console.WriteLine();
             Console.Write("Ange val: ");
             int menu = int.Parse(Console.ReadLine());
@@ -77,6 +78,10 @@ namespace ProgHomeWork.Övningar.Arrays
 
                 case 12:
                     CopyArray.RunCopyArray();
+                    break;
+
+                case 13:
+                    Ovning76.RunOvning76();
                     break;
             }
 

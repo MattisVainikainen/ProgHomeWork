@@ -12,14 +12,14 @@ namespace ProgHomeWork.Övningar.Arrays
         {
             double[] tal = { 3, 5, 2.35, 6, 8 };
             double sum = 0;
-
+            double avg = sum / tal.Length;
             foreach (var number in tal)
             {
                 sum += number;
             }
 
-            Console.WriteLine($"Totalt blir summan utav dessa tal: {sum}");
-            Console.WriteLine($"Medelvärdet utav dessa blir: {sum / tal.Length} ");
+            Console.WriteLine($"Totalt blir summan utav dessa tal: {sum.ToString("0.00")}");
+            Console.WriteLine($"Medelvärdet utav dessa blir: {avg.ToString("0.00")}");
             Console.ReadLine();
         }
 
