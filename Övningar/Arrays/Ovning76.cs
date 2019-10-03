@@ -10,19 +10,37 @@ namespace ProgHomeWork.Övningar.Arrays
     {
         public void Print()
         {
-            int[] arrayNrOne = { 3, 6, 7, 8, 9 };
+
+            int[] arrayNrOne = new int[5];
             int[] arrayTwo = new int[5];
 
-            Array.Copy(arrayNrOne, arrayTwo, 5);
+            Console.Write("Input 5 elements in the array :\n");
+            for (int i = 0; i < arrayNrOne.Length; i++)
+            {
+                Console.Write($"element - {i + 1} : ");
+                arrayNrOne[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
+
+            Array.Copy(arrayNrOne, arrayTwo, arrayNrOne.Length);
+            Reverse(arrayTwo);
+            Console.WriteLine("\nReversing back");
+            Reverse(arrayTwo);
+            
+            
+           
+
+            Console.ReadLine();
+
+        }
+
+        private static void Reverse(int[] arrayTwo)
+        {
             Array.Reverse(arrayTwo);
             foreach (var number in arrayTwo)
             {
-                Console.WriteLine($"{number}");
+                Console.Write($"{number}");
             }
-            Console.WriteLine($"Vi kopierade innehållet från {arrayNrOne}");
-            Console.ReadLine();
-
         }
 
         public static void RunOvning76()
