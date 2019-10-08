@@ -29,6 +29,12 @@ namespace Test
             Console.WriteLine($"Current money: {p1.Money}");
             Console.ReadLine();
         }
+
+        public static void RunSpace()
+        {
+            space s = new space();
+            s.space1();
+        }
         
     }
 }

@@ -8,14 +8,7 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            space s = new space();
-            s.space1();
+            space.RunSpace();
         }
-
-        
     }
-
-    
-
-    
 }
