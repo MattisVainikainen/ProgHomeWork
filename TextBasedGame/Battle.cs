@@ -15,7 +15,7 @@ namespace TextBasedGame
 
         public static int RewardCash(Player player, int cash)
         {
-            return player.Cash = cash;
+            return player.Cash += cash;
         }
 
         public static int RewardExp(Player player, int exp)
@@ -33,7 +33,7 @@ namespace TextBasedGame
             do
             {
                 Random rnd = new Random();
-                int chance = rnd.Next(1,6);
+                int chance = rnd.Next(1,10);
 
                 p.NormalHit(enemy);
                 if (enemy.Health <= 0)
@@ -42,6 +42,7 @@ namespace TextBasedGame
                     Console.WriteLine($"{enemy.Name} is dead");
                     Console.WriteLine("Congratulations!");
                     Console.WriteLine();
+                    RewardCash(p, 30);
                     p.ExperiencePoints += 10;
                     break;
                 }

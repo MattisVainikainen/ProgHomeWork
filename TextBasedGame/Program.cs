@@ -23,6 +23,9 @@ namespace TextBasedGame
             Battle.Fight(player);
             Player.ShowStatus();
 
+            Battle.Fight(player);
+            Player.ShowStatus();
+
             Console.ReadKey();
 
         }
