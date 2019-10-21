@@ -11,19 +11,19 @@ namespace Hotell
         public string Name;
         public int CustomerId;
 
-        public Customer(string cn, int sid)
-        {
-            Name = cn;
-            CustomerId = sid;
-        }
+        //public Customer(string cn, int sid)
+        //{
+        //    Name = cn;
+        //    CustomerId = sid;
+        //}
 
-        public Customer()
-        {
+        //public Customer()
+        //{
 
-        }
-        public Customer(string name)
-        {
-            Name = name;
-        }
+        //}
+        //public Customer(string name)
+        //{
+        //    Name = name;
+        //}
     }
 }
