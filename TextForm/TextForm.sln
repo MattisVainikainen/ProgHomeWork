@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextForm", "TextForm.csproj", "{985B0CD7-5D4B-44E6-8002-EF77E05884C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{985B0CD7-5D4B-44E6-8002-EF77E05884C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985B0CD7-5D4B-44E6-8002-EF77E05884C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985B0CD7-5D4B-44E6-8002-EF77E05884C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985B0CD7-5D4B-44E6-8002-EF77E05884C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00925970-59EB-45B5-9297-9D275273B287}
+	EndGlobalSection
+EndGlobal

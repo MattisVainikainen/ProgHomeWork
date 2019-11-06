@@ -22,6 +22,7 @@ namespace Calculater
     {
         long number1 = 0;
         long number2 = 0;
+
         string operation = "";
         List<long> listOfNumbers = new List<long>();
 
@@ -38,12 +39,15 @@ namespace Calculater
             {
                 number1 = number1 * 10 + btnNum;
                 txtDisplay.Text = number1.ToString();
+                listOfNumbers.Add(number1);
+
 
             }
             else 
             {
                 number2 = number2 * 10 + btnNum;
                 txtDisplay.Text = number2.ToString();
+                listOfNumbers.Add(number2);
             }
         }
 
@@ -107,13 +111,16 @@ namespace Calculater
 
         }
 
+        //Kan inte göra en ny beräkning efter = tecknet.
         private void btEqual_Click(object sender, RoutedEventArgs e)
         {
-            switch(operation)
+           
+            switch(operation) 
             {
                 case "+":
+                   
                     txtDisplay.Text = (number1 + number2).ToString();
-                    labelCurrentOperation.Content = $"{number1} + {number2} = {txtDisplay.Text}";
+                    labelCurrentOperation.Content = $"{number1} + {number2} = {txtDisplay.Text}";                  
                     break;
 
                 case "-":
@@ -125,8 +132,9 @@ namespace Calculater
                     txtDisplay.Text = (number1 * number2).ToString();
                     labelCurrentOperation.Content = $"{number1} * {number2} = {txtDisplay.Text}";
                     break;
-
             }
+           
+
         }
 
         private void btDivide_Click(object sender, RoutedEventArgs e)
