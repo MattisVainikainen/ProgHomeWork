@@ -20,9 +20,171 @@ namespace Calculater
     /// </summary>
     public partial class MainWindow : Window
     {
+        long number1 = 0;
+        long number2 = 0;
+        string operation = "";
+        List<long> listOfNumbers = new List<long>();
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public void numAppend(int btnNum)
+        {
+            
+
+            if (operation == "")
+            {
+                number1 = number1 * 10 + btnNum;
+                txtDisplay.Text = number1.ToString();
+
+            }
+            else 
+            {
+                number2 = number2 * 10 + btnNum;
+                txtDisplay.Text = number2.ToString();
+            }
+        }
+
+        private void bt1_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(1);
+        }
+
+        private void bt2_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(2);
+        }
+
+        private void bt3_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(3);
+        }
+
+        private void bt4_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(4);
+        }
+
+        private void bt5_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(5);
+        }
+
+        private void bt6_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(6);
+        }
+
+        private void bt7_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(7);
+        }
+
+        private void bt8_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(8);
+        }
+
+        private void bt9_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(9);
+        }
+
+        private void bt0_Click(object sender, RoutedEventArgs e)
+        {
+            numAppend(0);
+        }
+
+        private void btPosNeg_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btComma_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btEqual_Click(object sender, RoutedEventArgs e)
+        {
+            switch(operation)
+            {
+                case "+":
+                    txtDisplay.Text = (number1 + number2).ToString();
+                    labelCurrentOperation.Content = $"{number1} + {number2} = {txtDisplay.Text}";
+                    break;
+
+                case "-":
+                    txtDisplay.Text = (number1 - number2).ToString();
+                    labelCurrentOperation.Content = $"{number1} - {number2} = {txtDisplay.Text}";
+                    break;
+
+                case "*":
+                    txtDisplay.Text = (number1 * number2).ToString();
+                    labelCurrentOperation.Content = $"{number1} * {number2} = {txtDisplay.Text}";
+                    break;
+
+            }
+        }
+
+        private void btDivide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btMulti_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "*";
+            labelCurrentOperation.Content = $"{number1} *";
+            txtDisplay.Text = "";
+        }
+
+        private void btMinus_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "-";
+            labelCurrentOperation.Content = $"{number1} -";
+            txtDisplay.Text = "";
+        }
+
+        private void btPlus_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "+";
+            labelCurrentOperation.Content = $"{number1} +";
+            txtDisplay.Text = "";
+        }
+
+        private void btBackSlash_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btC_Click(object sender, RoutedEventArgs e)
+        {
+            operation = "";
+            labelCurrentOperation.Content = "";
+            txtDisplay.Text = "0";
+            number1 = 0;
+            number2 = 0;
+        }
+
+        private void btCE_Click(object sender, RoutedEventArgs e)
+        {
+            txtDisplay.Text = "0";
+            if(operation == "")
+            {
+                number1 = 0;
+            }
+            else
+            {
+                number2 = 0;
+            }
+        }
+
+        private void txtDisplay_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Calculater"
         mc:Ignorable="d"
         Title="Caclulator" Height="430" Width="280">
+    <Border Margin="10" BorderThickness="3" BorderBrush="Black">
+        
+    
     <Grid Background="#eee">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -25,23 +28,23 @@
         </Grid.RowDefinitions>
 
         <!--Buttons-->
-        <Button x:Name="btn7" Grid.Row="3" Grid.Column="0" Click="bt7_Click">7</Button>
-        <Button x:Name="btn8" Grid.Row="3" Grid.Column="1" Click="bt6_Click">8</Button>
-        <Button x:Name="btn9" Grid.Row="3" Grid.Column="2" Click="bt5_Click">9</Button>
+        <Button x:Name="btn7" Grid.Row="3" Grid.Column="0" Margin ="10" Click="bt7_Click">7</Button>
+            <Button x:Name="btn8" Grid.Row="3" Grid.Column="1" Margin ="10" Click="bt8_Click">8</Button>
+            <Button x:Name="btn9" Grid.Row="3" Grid.Column="2"  Margin ="10" Click="bt9_Click">9</Button>
 
-        <Button x:Name="btn4" Grid.Row="4" Grid.Column="0" Click="bt4_Click">4</Button>
-        <Button x:Name="btn5" Grid.Row="4" Grid.Column="1" Click="bt5_Click">5</Button>
-        <Button x:Name="btn6" Grid.Row="4" Grid.Column="2" Click="bt6_Click">6</Button>
+            <Button x:Name="btn4" Grid.Row="4" Grid.Column="0" Margin ="10" Click="bt4_Click">4</Button>
+            <Button x:Name="btn5" Grid.Row="4" Grid.Column="1" Margin ="10" Click="bt5_Click">5</Button>
+            <Button x:Name="btn6" Grid.Row="4" Grid.Column="2" Margin ="10" Click="bt6_Click">6</Button>
 
-        <Button x:Name="btn1" Grid.Row="5" Grid.Column="0" Click="bt1_Click">1</Button>
-        <Button x:Name="btn2" Grid.Row="5" Grid.Column="1" Click="bt2_Click">2</Button>
-        <Button x:Name="btn3" Grid.Row="5" Grid.Column="2" Click="bt3_Click">3</Button>
+            <Button x:Name="btn1" Grid.Row="5" Grid.Column="0" Margin ="10" Click="bt1_Click">1</Button>
+            <Button x:Name="btn2" Grid.Row="5" Grid.Column="1" Margin ="10" Click="bt2_Click">2</Button>
+            <Button x:Name="btn3" Grid.Row="5" Grid.Column="2" Margin ="10" Click="bt3_Click">3</Button>
 
-        <Button x:Name="btn0" Grid.Row="6" Grid.Column="1" Click="bt0_Click" >0</Button>
+            <Button x:Name="btn0" Grid.Row="6" Grid.Column="1" Margin ="10" Click="bt0_Click" >0</Button>
         
         <!-- -->
-        <Button x:Name="btnPositiveNegative" Grid.Row="6" Grid.Column="0" Click="btPosNeg_Click">+-</Button>
-        <Button x:Name="btnComma" Grid.Row="6" Grid.Column="2" Click="btComma_Click">,</Button>
+            <Button x:Name="btnPositiveNegative" Grid.Row="6" Grid.Column="0" Margin ="10" Click="btPosNeg_Click">+-</Button>
+            <Button x:Name="btnComma" Grid.Row="6" Grid.Column="2" Margin ="10" Click="btComma_Click">,</Button>
         
         
         <!--Math operators -->
@@ -62,8 +65,12 @@
         
         <!-- Result label-->
         <Label x:Name="labelCurrentOperation" Visibility="Visible" HorizontalContentAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0"
-               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="#eee" Foreground="Yellow"></Label>
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="#eee" Foreground="Black"></Label>
+        
+        <!-- Menu list-->
+            
         
     </Grid>
-    
+    </Border>
+
 </Window>
