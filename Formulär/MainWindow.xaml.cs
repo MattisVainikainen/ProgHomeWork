@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TextForm
+namespace Formulär
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,9 +22,7 @@ namespace TextForm
     {
         public MainWindow()
         {
-
+            InitializeComponent();
         }
-
-        
     }
 }

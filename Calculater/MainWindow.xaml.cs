@@ -20,11 +20,10 @@ namespace Calculater
     /// </summary>
     public partial class MainWindow : Window
     {
-        long number1 = 0;
-        long number2 = 0;
+        decimal number1 = 0;
+        decimal number2 = 0;
 
         string operation = "";
-        List<long> listOfNumbers = new List<long>();
 
         public MainWindow()
         {
@@ -33,21 +32,18 @@ namespace Calculater
 
         public void numAppend(int btnNum)
         {
-            
 
+            
             if (operation == "")
             {
                 number1 = number1 * 10 + btnNum;
                 txtDisplay.Text = number1.ToString();
-                listOfNumbers.Add(number1);
-
 
             }
             else 
             {
                 number2 = number2 * 10 + btnNum;
                 txtDisplay.Text = number2.ToString();
-                listOfNumbers.Add(number2);
             }
         }
 
@@ -103,43 +99,75 @@ namespace Calculater
 
         private void btPosNeg_Click(object sender, RoutedEventArgs e)
         {
-
+            if (operation == "")
+            {
+                number1 *= -1;
+                txtDisplay.Text = number1.ToString();
+            }
+            else
+            {
+                number2 *= -1;
+                txtDisplay.Text = number2.ToString();
+            }
         }
 
         private void btComma_Click(object sender, RoutedEventArgs e)
         {
 
+            txtDisplay.Text += ",";
+
         }
 
-        //Kan inte göra en ny beräkning efter = tecknet.
         private void btEqual_Click(object sender, RoutedEventArgs e)
         {
-           
-            switch(operation) 
+            
+            switch (operation) 
             {
                 case "+":
-                   
-                    txtDisplay.Text = (number1 + number2).ToString();
-                    labelCurrentOperation.Content = $"{number1} + {number2} = {txtDisplay.Text}";                  
+                    number2 = number1 + decimal.Parse(txtDisplay.Text);
+                    labelCurrentOperation.Content = number1 + "+" + double.Parse(txtDisplay.Text);
+                    txtDisplay.Text = number2.ToString();
+                    number1 = 0;
                     break;
 
                 case "-":
-                    txtDisplay.Text = (number1 - number2).ToString();
-                    labelCurrentOperation.Content = $"{number1} - {number2} = {txtDisplay.Text}";
+                    number2 = number1 - decimal.Parse(txtDisplay.Text);
+                    txtDisplay.Text = number2.ToString();
+                    number1 = 0;
+                    //txtDisplay.Text = (number1 - number2).ToString();
+                    //labelCurrentOperation.Content = $"{number1} - {number2} = {txtDisplay.Text}";
                     break;
 
                 case "*":
-                    txtDisplay.Text = (number1 * number2).ToString();
-                    labelCurrentOperation.Content = $"{number1} * {number2} = {txtDisplay.Text}";
+                    number2 = number1 * decimal.Parse(txtDisplay.Text);
+                    txtDisplay.Text = number2.ToString();
+                    number1 = 0;
+                    //txtDisplay.Text = (number1 * number2).ToString();
+                    //labelCurrentOperation.Content = $"{number1} * {number2} = {txtDisplay.Text}";
+                    break;
+
+                case "/":
+                    number2 = number1 / decimal.Parse(txtDisplay.Text);
+                    txtDisplay.Text = number2.ToString();
+                    number1 = 0;
+                    //txtDisplay.Text = (number1 / number2).ToString();
+                    //labelCurrentOperation.Content = $"{number1} / {number2} = {txtDisplay.Text}";
+
                     break;
             }
-           
+
+            number1 = 0;
+            number2 = 0;
+            operation = "";
+
 
         }
 
         private void btDivide_Click(object sender, RoutedEventArgs e)
         {
-
+            operation = "/";
+            labelCurrentOperation.Content = $"{number1} /";
+            txtDisplay.Text = "";
         }
 
         private void btMulti_Click(object sender, RoutedEventArgs e)
@@ -165,16 +193,39 @@ namespace Calculater
 
         private void btBackSlash_Click(object sender, RoutedEventArgs e)
         {
+            if (operation == "")
+            {
+                number1 = DecimalToString(number1);
+            }
+            else
+            {
+                number2 = DecimalToString(number2);
+            }
 
+
+        }
+
+        private decimal DecimalToString(decimal number)
+        {
+            txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);
+            string numberHolder = number.ToString();
+            numberHolder = numberHolder.Substring(0, numberHolder.Length - 1);
+            number = decimal.Parse(numberHolder);
+            return number;
         }
 
         private void btC_Click(object sender, RoutedEventArgs e)
         {
-            operation = "";
-            labelCurrentOperation.Content = "";
-            txtDisplay.Text = "0";
-            number1 = 0;
-            number2 = 0;
+            MessageBox.Show("This Calculator was made By Mattis Vainikainen \nThanks for using it!", "Calculator Version 1.0" );
+            MessageBoxResult result = MessageBox.Show("Do you want to close this Calculator?",
+                                          "Confirmation",
+                                          MessageBoxButton.YesNo,
+                                          MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+
         }
 
         private void btCE_Click(object sender, RoutedEventArgs e)
