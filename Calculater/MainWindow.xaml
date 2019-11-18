@@ -57,7 +57,7 @@
 
             <!--Clear Buttons -->
             <Button x:Name="btnCE" Grid.Row="2" Grid.Column="0" Click="btCE_Click">CE</Button>
-            <Button x:Name="btnC" Grid.Row="2" Grid.Column="1" Click="btC_Click">About</Button>
+            <Button x:Name="btnC" Grid.Row="2" Grid.Column="1" Click="btC_Click">C</Button>
             <Button x:Name="btnLBackSlash" Grid.Row="2" Grid.Column="2" Content="&lt;==" Click="btBackSlash_Click"></Button>
 
             <!-- Display Button -->
