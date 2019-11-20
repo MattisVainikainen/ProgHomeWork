@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400" Background="#eee">
+        Title="MainWindow" Height="500" Width="400" Background="#eee">
     <Grid>
         
 
@@ -48,11 +48,47 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="ResultDice1"  FontSize="15" FontWeight="Bold" IsReadOnly="True" Padding="10" Margin="5" Grid.Column="0" Background="LightGray" Width="70" TextChanged="_ResultDice1"/>
-                <TextBox x:Name="ResultDice2"  FontSize="15" FontWeight="Bold" IsReadOnly="True" Padding="10" Margin="5" Grid.Column="1" Background="LightGray" Width="70" TextChanged="_ResultDice2"/>
-                <TextBox x:Name="ResultDice3"  FontSize="15" FontWeight="Bold" IsReadOnly="True" Padding="10" Margin="5" Grid.Column="2" Background="LightGray" Width="70" TextChanged="_ResultDice3"/>
-                <TextBox x:Name="ResultDice4"  FontSize="15" FontWeight="Bold" IsReadOnly="True" Padding="10" Margin="5" Grid.Column="3" Background="LightGray" Width="70" TextChanged="_ResultDice4"/>
-                <TextBox x:Name="ResultDice5"  FontSize="15" FontWeight="Bold" IsReadOnly="True" Padding="10" Margin="5" Grid.Column="4" Background="LightGray" Width="70" TextChanged="_ResultDice5"/>
+                <!-- Dice one -->
+                <Image x:Name="Dice1Image1" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice1.png"></Image>
+                <Image x:Name="Dice1Image2" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice2.png"></Image>
+                <Image x:Name="Dice1Image3" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice3.png"></Image>
+                <Image x:Name="Dice1Image4" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice4.png"></Image>
+                <Image x:Name="Dice1Image5" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice5.png"></Image>
+                <Image x:Name="Dice1Image6" Visibility="Hidden"  Margin="5" Grid.Column="0" Source=" Dice6.png"></Image>
+
+                <!-- Dice two -->
+                <Image x:Name="Dice2Image1" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice1.png"></Image>
+                <Image x:Name="Dice2Image2" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice2.png"></Image>
+                <Image x:Name="Dice2Image3" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice3.png"></Image>
+                <Image x:Name="Dice2Image4" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice4.png"></Image>
+                <Image x:Name="Dice2Image5" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice5.png"></Image>
+                <Image x:Name="Dice2Image6" Visibility="Hidden"  Margin="5" Grid.Column="1" Source=" Dice6.png"></Image>
+
+                <!-- Dice three -->
+                <Image x:Name="Dice3Image1" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice1.png"></Image>
+                <Image x:Name="Dice3Image2" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice2.png"></Image>
+                <Image x:Name="Dice3Image3" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice3.png"></Image>
+                <Image x:Name="Dice3Image4" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice4.png"></Image>
+                <Image x:Name="Dice3Image5" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice5.png"></Image>
+                <Image x:Name="Dice3Image6" Visibility="Hidden"  Margin="5" Grid.Column="2" Source=" Dice6.png"></Image>
+
+                <!-- Dice four -->
+                <Image x:Name="Dice4Image1" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice1.png"></Image>
+                <Image x:Name="Dice4Image2" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice2.png"></Image>
+                <Image x:Name="Dice4Image3" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice3.png"></Image>
+                <Image x:Name="Dice4Image4" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice4.png"></Image>
+                <Image x:Name="Dice4Image5" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice5.png"></Image>
+                <Image x:Name="Dice4Image6" Visibility="Hidden"  Margin="5" Grid.Column="3" Source=" Dice6.png"></Image>
+
+                <!-- Dice five -->
+                <Image x:Name="Dice5Image1" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice1.png"></Image>
+                <Image x:Name="Dice5Image2" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice2.png"></Image>
+                <Image x:Name="Dice5Image3" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice3.png"></Image>
+                <Image x:Name="Dice5Image4" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice4.png"></Image>
+                <Image x:Name="Dice5Image5" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice5.png"></Image>
+                <Image x:Name="Dice5Image6" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice6.png"></Image>
+
+               
             </Grid>
             <Grid>
                 <Grid.ColumnDefinitions>
