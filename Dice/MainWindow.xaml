@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="400" Background="#eee">
+        Title="Roll A Dice" Height="500" Width="400" Background ="Black">
+    <Border Padding="4" BorderThickness="10" Background="DarkOrange">
+        
+   
     <Grid>
         
-
-
         <StackPanel>
             <Label x:Name="Dice" HorizontalAlignment="Center" Margin="10" Content="Roll 5 Dices!" FontWeight="bold" FontSize="15"/>
             <Button x:Name="btnRollDice" Width="100" Background="Beige" Margin="10" Height="40" Click="BtnRollDice_Click">Roll Dices</Button>
@@ -87,9 +88,14 @@
                 <Image x:Name="Dice5Image4" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice4.png"></Image>
                 <Image x:Name="Dice5Image5" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice5.png"></Image>
                 <Image x:Name="Dice5Image6" Visibility="Hidden"  Margin="5" Grid.Column="4" Source=" Dice6.png"></Image>
-
-               
+ 
             </Grid>
+
+                <StackPanel>
+                    <Label Content="Highscore" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"/>
+                    <TextBox x:Name="Highscore" IsReadOnly="True" HorizontalAlignment="Center" Width=" 60" Padding="10" FontSize="14" FontWeight="Bold"></TextBox>
+                </StackPanel>
+            
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
@@ -100,8 +106,8 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label Content="Total Result Of Dices" Grid.Row="0" Grid.Column="0" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Margin="0,110,0,0"/>
-                <TextBox x:Name="txtDisplay" FontWeight="Bold" FontSize="25" IsReadOnly="True" Grid.Row="0" Grid.Column="1" Padding="5" Width="60" Margin=" 10,110,10,10" Background="LightGray" HorizontalAlignment="Center" TextChanged="TxtDisplay_TextChanged"/>
+                <Label Content="Total Result Of Dices" Grid.Row="0" Grid.Column="0" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+                <TextBox x:Name="txtDisplay" FontWeight="Bold" FontSize="25" IsReadOnly="True" Grid.Row="0" Grid.Column="1" Padding="5" Width="60" Margin=" 10,30,10,10" Background="LightGray" HorizontalAlignment="Center" TextChanged="TxtDisplay_TextChanged"/>
                 
             </Grid>
             
@@ -113,6 +119,6 @@
 
 
     </Grid>
-    
-    
+    </Border>
+
 </Window>

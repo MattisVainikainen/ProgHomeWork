@@ -21,6 +21,8 @@ namespace Dice
     public partial class MainWindow : Window
     {
         int totalResult;
+        int highScore;
+        
         
         
         public MainWindow()
@@ -39,6 +41,7 @@ namespace Dice
             dices[3] = rndDice.Next(1, 7);
             dices[4] = rndDice.Next(1, 7);
 
+            
 
             //ResultDice1.Text = dices[0].ToString();
             //ResultDice2.Text = dices[1].ToString();
@@ -49,7 +52,12 @@ namespace Dice
             foreach (var dice in dices)
             {
                 totalResult += dice;
+               
                 txtDisplay.Text = totalResult.ToString();
+               
+               
+               
+                
                 if(totalResult >= 20 && totalResult <=25)
                 {
                     Result.Content = $"Wow you got a GOOD score of {totalResult}";
@@ -66,7 +74,7 @@ namespace Dice
                 {
                     Result.Content = "Decent score. Nothing special about it!";
                 }
-
+              
                 #region DICE1
                 if (dices[0] == 1)
                 {
@@ -352,9 +360,16 @@ namespace Dice
                     Dice5Image6.Visibility = Visibility.Visible;
                 }
                 #endregion
+                
+            }
 
-
-
+            if (totalResult > highScore)
+            {
+                Highscore.Text = totalResult.ToString();
+                highScore = totalResult;
+                Result.Content = $"NEW HIGHSCORE! AWESOME! Your score is {totalResult}";
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("highScore.wav");
+                player.Play();
             }
             totalResult = 0;
         }
